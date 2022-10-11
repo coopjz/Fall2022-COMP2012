@@ -6,7 +6,7 @@ class Student_ListNode {
     int student_id;
     Student_ListNode* next;
 
-    Student_ListNode(int student_id, Student_ListNode* next);
+    Student_ListNode(const int student_id, Student_ListNode* const next);
     ~Student_ListNode() = default;
 };
 
@@ -22,11 +22,11 @@ class Wait_List {
 
     void print_list() const;
 
-    Student_ListNode* get_head();
-    Student_ListNode* get_end();
+    Student_ListNode* get_head() const;
+    Student_ListNode* get_end() const;
 
-    void set_head(Student_ListNode* head);
-    void set_end(Student_ListNode* end);
+    void set_head(Student_ListNode* const head);
+    void set_end(Student_ListNode* const end);
 };
 
 #endif

@@ -421,7 +421,7 @@ int main() {
             system->add_course("COMP1022P", 3, 2);
             system->add_course("MATH1000", 2, 2);
             system->add_course("A_VERY_HARD_COURSE", 10, 2);
-            system->add_course("SOSC1960", 3, 2);
+            system->add_course("SOSC1960", 4, 2);
             system->add_course("COMP2012H", 5, 2);
 
             system->add(1000, "COMP1022P");

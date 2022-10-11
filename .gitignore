@@ -1,0 +1,4 @@
+.history
+*.o
+*.out
+*.exe

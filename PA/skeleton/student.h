@@ -18,31 +18,31 @@ class Student {
     Swap_List* swap_list;    // A pointer to a dynamically allocated Swap_List object
 
     public:
-    Student(const char* name, int student_id, double gpa);
+    Student(const char* const name, const int student_id, const double gpa);
     Student(const Student& student);
     ~Student();
 
     void print_info() const;
 
-    char* get_name();
-    int get_student_id();
-    double get_gpa();
-    int get_max_credit();
-    int get_curr_credit();
-    int get_num_enrolled_course();
-    char** get_enrolled_courses();
-    int get_pending_credit();
-    Swap_List* get_swap_list();
+    char* get_name() const;
+    int get_student_id() const;
+    double get_gpa() const;
+    int get_max_credit() const;
+    int get_curr_credit() const;
+    int get_num_enrolled_course() const;
+    char** get_enrolled_courses() const;
+    int get_pending_credit() const;
+    Swap_List* get_swap_list() const;
 
-    void set_name(char* name);
-    void set_student_id(int student_id);
-    void set_gpa(double gpa);
-    void set_max_credit(int max_credit);
-    void set_curr_credit(int curr_credit);
-    void set_num_enrolled_course(int num_enrolled_course);
-    void set_enrolled_courses(char** enrolled_courses);
-    void set_pending_credit(int pending_credit);
-    void set_swap_list(Swap_List* swap_list);
+    void set_name(char* const name);
+    void set_student_id(const int student_id);
+    void set_gpa(const double gpa);
+    void set_max_credit(const int max_credit);
+    void set_curr_credit(const int curr_credit);
+    void set_num_enrolled_course(const int num_enrolled_course);
+    void set_enrolled_courses(char** const enrolled_courses);
+    void set_pending_credit(const int pending_credit);
+    void set_swap_list(Swap_List* const swap_list);
 };
 
 #endif

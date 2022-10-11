@@ -7,7 +7,7 @@ class Swap {
     char* target_course_name;
     Swap* next;
 
-    Swap(const char* original_course_name, const char* target_course_name, Swap* next);
+    Swap(const char* const original_course_name, const char* const target_course_name, Swap* const next);
     ~Swap();
 };
 
@@ -23,8 +23,8 @@ class Swap_List{
 
     void print_list() const;
 
-    Swap* get_head();
-    void set_head(Swap* head);
+    Swap* get_head() const;
+    void set_head(Swap* const head);
 };
 
 #endif

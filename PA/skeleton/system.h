@@ -10,27 +10,27 @@ class System {
     Student_Database* student_database;
 
     public:
-    System(int max_num_course, int max_num_student);
+    System(const int max_num_course, const int max_num_student);
     System(const System& system);
     ~System();
 
     // Student related functions
-    void admit(const char* name, int student_id, double gpa);
-    bool apply_overload(int student_id, int request_credit);
-    bool add(int student_id, const char* course_name);
-    bool swap(int student_id, const char* original_course_name, const char* target_course_name); // Always assume that student has enrolled into the original course
-    void drop(int student_id, const char* course_name); // Assume student always has the course to drop
+    void admit(const char* const name, const int student_id, const double gpa);
+    bool apply_overload(const int student_id, const int request_credit);
+    bool add(const int student_id, const char* const course_name);
+    bool swap(const int student_id, const char* const original_course_name, const char* const target_course_name); // Always assume that student has enrolled into the original course
+    void drop(const int student_id, const char* const course_name); // Assume student always has the course to drop
     
     // Course related functions
-    void add_course(const char* name, int num_credit, int max_capacity);
+    void add_course(const char* const name, const int num_credit, const int max_capacity);
     
     void print_info() const;
 
-    Course_Database* get_course_database();
-    Student_Database* get_student_database();
+    Course_Database* get_course_database() const;
+    Student_Database* get_student_database() const;
 
-    void set_course_database(Course_Database* course_database);
-    void set_student_database(Student_Database* student_database);
+    void set_course_database(Course_Database* const course_database);
+    void set_student_database(Student_Database* const student_database);
 };
 
 #endif
