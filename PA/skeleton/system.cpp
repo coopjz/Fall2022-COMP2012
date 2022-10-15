@@ -208,8 +208,7 @@ bool System::swap(const int student_id, const char *const original_course_name, 
     int original_credit = original_course->get_num_credit();
     int pending_credit = student_apply->get_pending_credit();
     int credit_diff = add_credit - original_credit;
-
-    if ((cur_credit + pending_credit + credit_diff) > student_apply->get_max_credit() || (cur_credit + pending_credit + credit_diff) == student_apply->get_max_credit())
+    if ((cur_credit + pending_credit + credit_diff) < student_apply->get_max_credit() || (cur_credit + pending_credit + credit_diff) == student_apply->get_max_credit())
     {
         if (target_course->get_capacity() > target_course->get_size())
         {
@@ -225,12 +224,12 @@ bool System::swap(const int student_id, const char *const original_course_name, 
 
             student_apply->set_num_enrolled_course(student_apply->get_num_enrolled_course() + 1);
             this->drop(student_id, original_course_name);
-            student_apply->set_curr_credit(student_apply->get_curr_credit() + credit_diff);
+            student_apply->set_curr_credit(student_apply->get_curr_credit() + add_credit);
         }
         else
         {
             join_waitlist(student_id, target_course);
-            pending_credit += original_credit > add_credit ? original_credit : add_credit;
+            pending_credit += (original_credit > add_credit ? 0 : add_credit - original_credit);
             student_apply->set_pending_credit(pending_credit);
 
             Swap_List *swap_list = student_apply->get_swap_list();
@@ -270,7 +269,6 @@ void add_in_drop(Student *wait_student, Course *course, const int add_index)
     wait_student->set_pending_credit(pending_credit - add_credit);
 }
 
-
 void System::drop(const int student_id, const char *const course_name)
 {
     // TODO
@@ -307,20 +305,26 @@ void System::drop(const int student_id, const char *const course_name)
         Student *wait_student = this->get_student_database()->get_student_by_id(wait_student_id);
 
         if (wait_student->get_swap_list()->get_head() == nullptr)
+        {
+
             add_in_drop(wait_student, drop_course, drop_student_index);
+        }
         else
         {
+
             Swap *temp_swap = wait_student->get_swap_list()->get_head();
             bool isswap = false;
             while (temp_swap)
             {
                 if (!strcmp(temp_swap->target_course_name, course_name))
                 {
+
                     int cur_credit = wait_student->get_curr_credit();
-                    int pending_credit = wait_student->get_pending_credit();
+                    int add_credit = drop_course->get_num_credit();
+                    int drop_credit = this->get_course_database()->get_course_by_name(temp_swap->original_course_name)->get_num_credit();
                     // course
                     int *student_list = drop_course->get_students_enrolled();
-                    int credit_diff = -this->get_course_database()->get_course_by_name(temp_swap->original_course_name)->get_num_credit() + drop_course->get_num_credit();
+                    int credit_diff = -drop_credit + add_credit;
                     student_list[drop_student_index] = wait_student->get_student_id();
                     drop_course->set_students_enrolled(student_list);
 
@@ -330,7 +334,13 @@ void System::drop(const int student_id, const char *const course_name)
 
                     wait_student->set_num_enrolled_course(wait_student->get_num_enrolled_course() + 1);
                     this->drop(wait_student->get_student_id(), temp_swap->original_course_name);
-                    wait_student->set_curr_credit(cur_credit + credit_diff);
+
+                    int pending_credit = wait_student->get_pending_credit();
+                    wait_student->set_curr_credit(wait_student->get_curr_credit() + add_credit);
+                    pending_credit -= (drop_credit > add_credit ? 0 : add_credit - drop_credit);
+                    wait_student->set_pending_credit(pending_credit);
+                    isswap = true;
+                    break;
                 }
                 temp_swap = temp_swap->next;
             }
