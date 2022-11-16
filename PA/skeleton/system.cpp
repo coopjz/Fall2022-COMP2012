@@ -303,7 +303,19 @@ void System::drop(const int student_id, const char *const course_name)
     {
         int wait_student_id = drop_course->get_wait_list()->get_head()->student_id;
         Student *wait_student = this->get_student_database()->get_student_by_id(wait_student_id);
+        /////////////////////////////////
+        Student_ListNode *temp = drop_course->get_wait_list()->get_head();
 
+        if (temp->next != nullptr)
+            drop_course->get_wait_list()->set_head(temp->next);
+        else
+        {
+            drop_course->get_wait_list()->set_head(nullptr);
+            drop_course->get_wait_list()->set_end(nullptr);
+        }
+        delete temp;
+        temp = nullptr;
+        //////////////////////////////////
         if (wait_student->get_swap_list()->get_head() == nullptr)
         {
 
@@ -333,6 +345,17 @@ void System::drop(const int student_id, const char *const course_name)
                     strcpy(*(enrolled_courses + wait_student->get_num_enrolled_course()), drop_course->get_name());
 
                     wait_student->set_num_enrolled_course(wait_student->get_num_enrolled_course() + 1);
+                    // Student_ListNode *temp = drop_course->get_wait_list()->get_head();
+
+                    // if (temp->next != nullptr)
+                    //     drop_course->get_wait_list()->set_head(temp->next);
+                    // else
+                    // {
+                    //     drop_course->get_wait_list()->set_head(nullptr);
+                    //     drop_course->get_wait_list()->set_end(nullptr);
+                    // }
+                    // delete temp;
+                    // temp = nullptr;
                     this->drop(wait_student->get_student_id(), temp_swap->original_course_name);
 
                     int pending_credit = wait_student->get_pending_credit();
@@ -372,17 +395,21 @@ void System::drop(const int student_id, const char *const course_name)
                 }
             }
         }
-        Student_ListNode *temp = drop_course->get_wait_list()->get_head();
+        // if (drop_course->get_wait_list()->get_head() != nullptr)
+        // {
 
-        if (temp->next != nullptr)
-            drop_course->get_wait_list()->set_head(temp->next);
-        else
-        {
-            drop_course->get_wait_list()->set_head(nullptr);
-            drop_course->get_wait_list()->set_end(nullptr);
-        }
-        delete temp;
-        temp = nullptr;
+        //     Student_ListNode *temp = drop_course->get_wait_list()->get_head();
+
+        //     if (temp->next != nullptr)
+        //         drop_course->get_wait_list()->set_head(temp->next);
+        //     else
+        //     {
+        //         drop_course->get_wait_list()->set_head(nullptr);
+        //         drop_course->get_wait_list()->set_end(nullptr);
+        //     }
+        //     delete temp;
+        //     temp = nullptr;
+        // }
     }
     else
     {

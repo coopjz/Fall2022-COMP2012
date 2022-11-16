@@ -1,4 +1,4 @@
-CPPFLAGS = -std=c++11 -g -fsanitize=address -fsanitize=undefined
+CPPFLAGS = -std=c++11 -g -fsanitize=address
 OBJECTS = course_database.o course.o main.o student_database.o student.o swap_list.o system.o wait_list.o
 
 all: pa1

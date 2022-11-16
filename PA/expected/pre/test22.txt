@@ -1,0 +1,229 @@
+Enter testcase number: 
+Test Case: 22
+PRINTING ALL COURSE INFORMATION: 
+---------------------
+Course Name: COURSE1
+Num Credit: 3
+Current Size: 1 out of Capacity: 2
+
+Student Enrolled: 
+1002
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE2
+Num Credit: 4
+Current Size: 1 out of Capacity: 2
+
+Student Enrolled: 
+1003
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE3
+Num Credit: 5
+Current Size: 0 out of Capacity: 2
+
+Student Enrolled: 
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE4
+Num Credit: 1
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1004
+1005
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE5
+Num Credit: 2
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1004
+1007
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE6
+Num Credit: 3
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1006
+1007
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE7
+Num Credit: 4
+Current Size: 1 out of Capacity: 2
+
+Student Enrolled: 
+1009
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE8
+Num Credit: 3
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1008
+1009
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: COURSE9
+Num Credit: 4
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1008
+1005
+
+Waitlist Information: 
+
+
+PRINTING ALL STUDENT INFORMATION: 
+-------------------
+Student Name: student1
+Student ID: 1001	 GPA: 3.5
+Current Credit: 0 out of Max Credit: 18
+
+Num Courses Enrolled: 0
+Course Enrolled: 
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student2
+Student ID: 1002	 GPA: 4
+Current Credit: 3 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+COURSE1
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student3
+Student ID: 1003	 GPA: 3.5
+Current Credit: 4 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+COURSE2
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student4
+Student ID: 1004	 GPA: 3
+Current Credit: 3 out of Max Credit: 18
+
+Num Courses Enrolled: 2
+Course Enrolled: 
+COURSE4
+COURSE5
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student5
+Student ID: 1005	 GPA: 4.3
+Current Credit: 5 out of Max Credit: 18
+
+Num Courses Enrolled: 2
+Course Enrolled: 
+COURSE4
+COURSE9
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student6
+Student ID: 1006	 GPA: 1.5
+Current Credit: 3 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+COURSE6
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student7
+Student ID: 1007	 GPA: 4.3
+Current Credit: 5 out of Max Credit: 18
+
+Num Courses Enrolled: 2
+Course Enrolled: 
+COURSE6
+COURSE5
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student8
+Student ID: 1008	 GPA: 4.3
+Current Credit: 7 out of Max Credit: 18
+
+Num Courses Enrolled: 2
+Course Enrolled: 
+COURSE8
+COURSE9
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student9
+Student ID: 1009	 GPA: 4.3
+Current Credit: 7 out of Max Credit: 18
+
+Num Courses Enrolled: 2
+Course Enrolled: 
+COURSE8
+COURSE7
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+

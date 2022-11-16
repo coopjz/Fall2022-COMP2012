@@ -1,0 +1,238 @@
+Enter testcase number: 
+Test Case: 21
+PRINTING ALL COURSE INFORMATION: 
+---------------------
+Course Name: COMP1022P
+Num Credit: 3
+Current Size: 1 out of Capacity: 2
+
+Student Enrolled: 
+1000
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: MATH1000
+Num Credit: 2
+Current Size: 1 out of Capacity: 2
+
+Student Enrolled: 
+1000
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: A_VERY_HARD_COURSE
+Num Credit: 10
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1000
+1009
+
+Waitlist Information: 
+
+
+---------------------
+Course Name: SOSC1960
+Num Credit: 4
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1001
+1002
+
+Waitlist Information: 
+Waitlist Number: 0
+1003
+Waitlist Number: 1
+1004
+Waitlist Number: 2
+1005
+Waitlist Number: 3
+1000
+
+
+---------------------
+Course Name: COMP2012H
+Num Credit: 5
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1005
+1004
+
+Waitlist Information: 
+Waitlist Number: 0
+1001
+
+
+---------------------
+Course Name: MAGIC1001
+Num Credit: 3
+Current Size: 2 out of Capacity: 2
+
+Student Enrolled: 
+1003
+1010
+
+Waitlist Information: 
+Waitlist Number: 0
+1000
+
+
+PRINTING ALL STUDENT INFORMATION: 
+-------------------
+Student Name: Adam
+Student ID: 1000	 GPA: 2
+Current Credit: 15 out of Max Credit: 18
+
+Num Courses Enrolled: 3
+Course Enrolled: 
+COMP1022P
+A_VERY_HARD_COURSE
+MATH1000
+
+Pending swaps information: 
+Pending Credit: 2
+Swap: 0
+Original Course: A_VERY_HARD_COURSE
+Target Course: MAGIC1001
+Swap: 1
+Original Course: MATH1000
+Target Course: SOSC1960
+
+
+-------------------
+Student Name: Brian
+Student ID: 1001	 GPA: 4.3
+Current Credit: 4 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+SOSC1960
+
+Pending swaps information: 
+Pending Credit: 2
+Swap: 0
+Original Course: COMP1022P
+Target Course: COMP2012H
+
+
+-------------------
+Student Name: Cindy
+Student ID: 1002	 GPA: 4.3
+Current Credit: 4 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+SOSC1960
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student1
+Student ID: 1003	 GPA: 3.5
+Current Credit: 3 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+MAGIC1001
+
+Pending swaps information: 
+Pending Credit: 4
+
+
+-------------------
+Student Name: student2
+Student ID: 1004	 GPA: 1.4
+Current Credit: 5 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+COMP2012H
+
+Pending swaps information: 
+Pending Credit: 4
+
+
+-------------------
+Student Name: student3
+Student ID: 1005	 GPA: 2.5
+Current Credit: 5 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+COMP2012H
+
+Pending swaps information: 
+Pending Credit: 4
+
+
+-------------------
+Student Name: student4
+Student ID: 1006	 GPA: 3.75
+Current Credit: 0 out of Max Credit: 18
+
+Num Courses Enrolled: 0
+Course Enrolled: 
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student5
+Student ID: 1007	 GPA: 0.1
+Current Credit: 0 out of Max Credit: 18
+
+Num Courses Enrolled: 0
+Course Enrolled: 
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student6
+Student ID: 1008	 GPA: 4
+Current Credit: 0 out of Max Credit: 18
+
+Num Courses Enrolled: 0
+Course Enrolled: 
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student7
+Student ID: 1009	 GPA: 4
+Current Credit: 10 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+A_VERY_HARD_COURSE
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+-------------------
+Student Name: student7
+Student ID: 1010	 GPA: 4
+Current Credit: 3 out of Max Credit: 18
+
+Num Courses Enrolled: 1
+Course Enrolled: 
+MAGIC1001
+
+Pending swaps information: 
+Pending Credit: 0
+
+
+

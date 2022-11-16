@@ -1,22 +1,30 @@
-#include <iostream>     /* File: construction-v-destruction-order.cpp */
+#include <iostream> /* File: construction-v-destruction-order.cpp */
 using namespace std;
 
-class Base 
+class Base
 {
-  public: 
-    Base() { cout << "Base's constructor\n"; }
-    virtual ~Base() { cout << "Base's destructor\n"; }
+public:
+  Base() { cout << "Base's constructor\n"; }
+  ~Base() { cout << "Base's destructor\n"; }
 };
 
-class Derived : public Base 
+class Derived : public Base
 {
-  public: 
-    Derived() { cout << "Derived's constructor\n"; }
-    virtual ~Derived() { cout << "Derived's destructor\n"; }
+public:
+  Derived() { cout << "Derived's constructor\n"; }
+  ~Derived() { cout << "Derived's destructor\n"; }
 };
 
-int main() 
-{ 
-    Base* p = new Derived; 
-    delete p; 
+class Derived2 : public Derived
+{
+public:
+  Derived2() { cout << "Derived2's constructor \n"; }
+  virtual ~Derived2() { cout << "Derived2's Destructor " << endl; }
+};
+
+main()
+{
+  Base *p = new Derived2;
+  delete p;
+dynamic_cast
 }
