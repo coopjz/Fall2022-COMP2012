@@ -9,8 +9,9 @@
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="PA2" targetName="all" />
-      <config projectName="PA2" targetName="PA2" />
       <config projectName="PA2" targetName="zip" />
+      <config projectName="PA2" targetName="Makefile" />
+      <config projectName="PA2" targetName="PA2.exe" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -20,18 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a0f943-2ced-4015-8eb0-587229238c5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/comp2012.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../skeleton/.idea/skeleton.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../skeleton/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../skeleton/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../skeleton/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../skeleton/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../skeleton/pa1" beforeDir="false" afterPath="$PROJECT_DIR$/../skeleton/pa1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../skeleton/system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../skeleton/system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../class/Program/constructor/return-by-value.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../class/Program/constructor/return-by-value.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../class/inheritance-program/Program/basics/teacher.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../class/inheritance-program/Program/basics/teacher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../class/inheritance-program/Program/basics/uperson.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../class/inheritance-program/Program/basics/uperson.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../class/inheritance-program/Program/virtual-function/construction-v-destruction-order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../class/inheritance-program/Program/virtual-function/construction-v-destruction-order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,21 +80,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/OneDrive - HKUST Connect/22-23Fall/COMP2611/COMP2611HW3_Fall22_cpp&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "E:/COMP2012/comp2012/Lab/Lab7/skeleton",
+    "nodejs_package_manager_path": "npm",
+    "structure.view.defaults.are.configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Makefile Application.all">
-    <configuration name="PA2" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PA2" TARGET_NAME="PA2" CONFIG_NAME="PA2" version="1">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Makefile" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PA2" TARGET_NAME="Makefile" CONFIG_NAME="Makefile" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PA2.exe" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PA2" TARGET_NAME="PA2.exe" CONFIG_NAME="PA2.exe" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
@@ -121,7 +121,8 @@
     </configuration>
     <list>
       <item itemvalue="Makefile Application.all" />
-      <item itemvalue="Makefile Application.PA2" />
+      <item itemvalue="Makefile Application.Makefile" />
+      <item itemvalue="Makefile Application.PA2.exe" />
       <item itemvalue="Makefile Application.zip" />
     </list>
   </component>
@@ -136,6 +137,7 @@
       <workItem from="1667925925695" duration="8582000" />
       <workItem from="1667997062834" duration="48000" />
       <workItem from="1668074540654" duration="793000" />
+      <workItem from="1668597173493" duration="45000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,13 @@
 using namespace std;
 #include "teacher.h"
 
+
+
+
+int fun()
+{
+    static int a1 = 1;
+}
 int main()
 {
     UPerson uperson("Charlie Brown", CBME);
@@ -20,7 +27,6 @@ int main()
     cout << "\nTeacher object pointed by UPerson pointer:\n";
     u = &teacher;
     u->print();
-
     // cout << "\nUPerson object pointed by Teacher pointer:\n";
     // t = &uperson; t->print(); // Error: convert base-class ptr
     //        to derived-class ptr

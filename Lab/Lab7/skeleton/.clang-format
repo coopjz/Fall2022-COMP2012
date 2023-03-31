@@ -1,0 +1,15 @@
+BasedOnStyle: Google
+IndentWidth: 4
+AlignEscapedNewlines: Left
+AlignTrailingComments: true
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASPingleLine: false
+AllowAllParametersOfDeclarationOnNextLine: true
+BinPackParameters: false
+BinPackArguments: false
+ColumnLimit: 150
+PointerAlignment: Right
+DerivePointerAlignment: false
+IndentCaseLabels: false
+NamespaceIndentation: None
